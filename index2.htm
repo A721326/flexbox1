@@ -1,0 +1,50 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>style css</title>
+    <style>
+      .fcontainer {
+        display: flex;
+        border: 2px solid gray;
+        height: 45vh;
+        /*flex-direction:row;*/
+        /*flex-direction: column-reverse;*/
+        /*justify-content: flex-end;*/
+        justify-content: center;
+        align-items: center;
+        /*align-items: flex-start;*/
+        /*align-items: flex-end;*/
+        /*justify-content: space-around;*/
+        /*flex-wrap: wrap;*/
+        /*flex-wrap: wrap-reverse;*/
+      }
+      .fitem {
+        background-color: red;
+        border: 2px solid black;
+        margin: 12px;
+        height: 122;
+        width: 122;
+      }
+      .item1 {
+        order: 2;
+        /*flex-grow: 3;*/
+        align-self: center;
+      }
+      .item2 {
+        order: 3;
+
+        /*flex-shrink: 2;*/
+      }
+    </style>
+  </head>
+  <body>
+    <div class="fcontainer">
+      <div class="fitem item1">1</div>
+      <div class="fitem item2">2</div>
+      <div class="fitem item3">3</div>
+      <div class="fitem item4">4</div>
+    </div>
+  </body>
+</html>
